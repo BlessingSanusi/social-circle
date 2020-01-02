@@ -1,7 +1,7 @@
 {
   "name": "social-circle",
   "version": "1.0.0",
-  "description": "Social circle for developers ",
+  "description": "Social Circle For Developers ",
   "main": "server.js",
   "scripts": {
     "start": "node server",

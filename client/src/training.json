@@ -1,0 +1,40 @@
+[{
+        "id": 1,
+        "courseTitle": "EMERGENCY PREPAREDNESS: COMMAND AND CONTROL",
+        "category": "Management",
+        "location": "Houston, TX",
+        "date": "Jan 27 - Jan 31, 2020"
+    },
+
+    {
+        "id": 2,
+        "courseTitle": "CASING AND TUBING DESIGNS",
+        "category": "O&G Technical",
+        "location": "Houston, TX",
+        "date": "Jan 27 - Jan 31, 2020"
+    },
+    {
+        "id": 3,
+        "courseTitle": "INTEGRATED PRODUCTION MODELING",
+        "category": "O&G Technical",
+        "location": "Houston, TX",
+        "date": "Feb 3 - Feb 7, 2020"
+    },
+
+    {
+        "id": 4,
+        "courseTitle": "MASTER OF CEREMONIES, PUBLIC SPEAKING & BROADCASTING",
+        "category": "Management",
+        "location": "Houston, TX",
+        "date": "Feb 3 - Feb 7, 2020"
+    },
+    {
+        "id": 5,
+        "courseTitle": "ASSET INTEGRITY MANAGEMENT",
+        "category": "Management",
+        "location": "Houston, TX",
+        "date": "Feb 10 - Feb 14, 2020"
+    }
+
+
+]

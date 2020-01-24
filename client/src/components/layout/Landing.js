@@ -1,15 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
-const Landing = () => {
+const Landing = ({ isAuthenticated }) => {
+  if (isAuthenticated) {
+    return <Redirect to='/dashboard' />;
+  }
+
   return (
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <h1 className='landing-h1'> Social Circle</h1>
+          <h1 className='landing-h1'> Techie Circle</h1>
           <p className='lead'>
-            Create a developer social circle profile/portfolio, share posts and
-            get help from other developers
+            A close social circle for developers and designers to share skills,
+            help and get help from eachother
           </p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-dark'>
@@ -25,4 +31,12 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+Landing.propTypes = {
+  isAuthenticated: PropTypes.bool
+};
+
+const mapStateToProps = state => ({
+  isAuthenticated: state.auth.isAuthenticated
+});
+
+export default connect(mapStateToProps)(Landing);
